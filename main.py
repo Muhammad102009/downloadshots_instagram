@@ -3,10 +3,9 @@ import os
 import requests
 from instaloader import Instaloader, Post
 from urllib.parse import urlparse
-import token
-API_TOKEN = '7710808912:AAGcb0amNXEv3sRCNeZtdubT5BdW3Ln1hO4'
+from config import token
 
-bot = telebot.TeleBot(API_TOKEN)
+bot = telebot.TeleBot(token)
 
 loader = Instaloader()
 
